@@ -1,3 +1,5 @@
+package step2_function_and_variables
+
 class VariablesPractice {
 }
 

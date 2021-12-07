@@ -1,3 +1,5 @@
+package step3_class
+
 // 클래스의 속성은 선언 또는 본문에 나열될 수 있습니다.
 class Rectangle(var height: Double, var length: Double) {
     var perimeter = (height + length) * 2
