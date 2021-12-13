@@ -1,6 +1,6 @@
-package step6_for_loop
+package step6_loop
 
-class ForLoopEx {
+class ForLoop {
 }
 
 fun main() {

@@ -1,4 +1,4 @@
-package step6_for_loop
+package step6_loop
 
 class RangeExpressions {
 }
@@ -21,17 +21,17 @@ fun main() {
 
     // 임의의 step으로 반복할 수 있습니다.
     // 예를들어 step2는 2씩 증가시키거나 감소시킨다는 의미입니다.
-    for (i in 1..8 step 2) print(i)
+    for (k in 1..8 step 2) print(k)
     println()
-    for (i in 8 downTo 1 step 2) print(i)
+    for (k in 8 downTo 1 step 2) print(k)
     println()
-    for (i in 8 downTo 6 step 2) print(i)
+    for (k in 8 downTo 6 step 2) print(k)
 
     println()
 
     // rangeTo 함수를 사용하면 끝 요소를 포함합니다.
     // 만약 끝 요소를 포함하고 싶지 않다면 until 함수를 사용합니다.
-    for (i in 1 until 10) {       // i in [1, 10), 10 은 포함하지 않는다.
-        print(i)
+    for (p in 1 until 10) {       // i in [1, 10), 10 은 포함하지 않는다.
+        print(p)
     }
 }
