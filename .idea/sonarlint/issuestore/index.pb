@@ -1,10 +1,6 @@
 
-@
-build.gradle.kts,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d
 A
 gradle.properties,2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 ^
 .src/main/kotlin/step1_helloworld/HelloWorld.kt,8/3/833c2a6eb57fa1edf395a968b619e945c5be71fa
 _

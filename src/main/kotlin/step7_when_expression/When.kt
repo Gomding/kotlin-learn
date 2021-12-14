@@ -40,8 +40,8 @@ fun main() {
 
     /*
     when statement 에서 else 처리는 다음에서 필수이다.
-    when에는 boolean, enum 또는 sealed 또는 해당 null 가능한 대응 형식의 요소가 있습니다.
-    모든 분기사항을 다 명시하지 않았을 때
+    - when에는 boolean, enum 또는 sealed 또는 해당 null 가능한 대응 형식의 요소가 있습니다.
+    - 모든 분기사항을 다 명시하지 않았을 때
     */
     val color = Color.RED
     when (color) {
