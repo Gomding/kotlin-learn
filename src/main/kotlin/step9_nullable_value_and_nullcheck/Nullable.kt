@@ -2,7 +2,7 @@ package step9_nullable_value_and_nullcheck
 
 class Nullable {
     /*
-    코틀린에서 NPE(NullPointerException)이 발생하는 경우는 다음과 같습니다.
+    코틀린에서 NPE(NullPointerException)가 발생하는 경우는 다음과 같습니다.
     - throw NullPointerException() 을 명시적으로 호출한 경우
     - '!!' 연산자를 사용한 경우
     - 초기화 관련 데이터 불일치
@@ -13,8 +13,6 @@ class Nullable {
     - 자바는 제네릭에서 null을 허용. 따라서 null이 들어가지 않도록 하려면 다음과 같이 한다.
       + MutableList<String> -> MutableList<String?>
     - 기타 자바 코드로 인한 문제가 발생할 수 있음
-
-
      */
 }
 
@@ -89,12 +87,13 @@ fun main() {
     val al = a.length
 
     // b 는 null을 허용하므로 안전하지 않다. 따라서 컴파일러는 오류를 보고한다.
-    // val bl = b.length 컴파일 에러 발생!! Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type String?
-
+    // val bl = b.length 컴파일 에러 발생!!
+    // Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type String?
     // null을 햐용함에도 b.length와 같은것에 접근하는 경우 방법이 있다.
+
     /*
     null을 체크하는 것
-    b의 null 여부를 체크할 수 있다.
+    b의 null 여부를 체크 함으로써 b가 null이 아닐 때 b의 함수를 컴파일 오류 없이 사용할 수 있다.
      */
     val bl = if (b != null) b.length else -1
     // 컴파일러는 null 체크에 대한 정보를 추적하고 length 호출을 허용한다.
